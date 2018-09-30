@@ -1,0 +1,18 @@
+<!-- Generated template for the LookieComponent component -->
+<div *ngIf="data !== undefined">
+  <div style="width: 100%; text-align: center;">
+      <img (click)="twilioCall()" src="/assets/imgs/pharmAlarm.png" style="height: 140px;">
+  </div>
+
+  <!-- clipboard -->
+  <img class="clippy" src="assets/imgs/clippy.png">
+
+  <div style="margin-top: 90px; z-index: 1; text-align: center">
+    <img class="logo" (click)="onDismiss()" src="/assets/imgs/{{data.name}}.png">
+    <h3>{{ data.desc }}</h3>
+    <h3>{{ data.limit }}</h3>
+  </div>
+
+  <button ion-button (click)="onTakePill()">yeet</button>
+  
+</div>

@@ -1,3 +1,59 @@
+
 page-home {
 
+}
+
+
+.inline-gray-circle {
+    
+}
+
+.svg-pill {
+    height: 80px;
+    margin-left: -60px;
+    z-index: -1;
+}
+
+.drug-logo {
+    height: 40px;
+    width: 45px;
+    margin-left: -126px;
+    margin-bottom: 12px;
+    z-index: 1;
+}
+
+.drug-log {
+    margin-left: 25px;
+    width: 230px;
+    height: 50px;
+}
+
+.drug-circles {
+    height: 90px;
+    width: 90px;
+    border: blue 3px solid;
+    border-radius: 50%;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    width: 80%;
+    left: 50%;
+    margin-left: -165px;
+    background-color: black;
+}
+
+page-home .scroll-content {
+    margin-top: -30px; 
+}
+
+ion-list {
+    display: -webkit-inline-box;
+    -webkit-box-align:center;
+}
+
+page-home {
+   background-color: #d0d0d0ad;
 }

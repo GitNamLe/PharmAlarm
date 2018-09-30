@@ -4,19 +4,21 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { CameraPreview } from '@ionic-native/camera-preview';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { MongoService } from '../services/mongo.service';
+import { LookieComponent } from '../components/lookie/lookie';
 
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
-    ContactPage,
     HomePage,
+    LookieComponent,
     TabsPage
   ],
   imports: [
@@ -27,13 +29,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     AboutPage,
-    ContactPage,
     HomePage,
+    LookieComponent,
     TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    CameraPreview,
+    MongoService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
